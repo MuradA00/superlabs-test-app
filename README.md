@@ -1,4 +1,4 @@
-For creating a shake counting logic i've created a hook ``UseShake``, This custom hook, tracks the number of shakes a user makes by utilizing the device's accelerometer sensor. Here's a brief description of its logic:
+For creating a shake counting logic i've created a hook ``UseShakes``, This custom hook, tracks the number of shakes a user makes by utilizing the device's accelerometer sensor. Here's a brief description of its logic:
 
 Accelerometer Setup: The hook creates an instance of the Accelerometer with a specified frequency (60 Hz). This allows it to monitor the device's motion in real-time.
 
