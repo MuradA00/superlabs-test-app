@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --notification-transition-timing: 300ms ease;
+}
+
+body {
+  @apply text-gray-700 font-sans bg-black/5 bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200;
+}
+
+.notification-enter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.notification-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform var(--notification-transition-timing), opacity var(--notification-transition-timing);
+}
+
+.notification-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.notification-exit-active {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform var(--notification-transition-timing), opacity var(--notification-transition-timing);
+}
